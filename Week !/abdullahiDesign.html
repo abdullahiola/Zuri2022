@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design</title>
+  <style>
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 20vh;
+       background-color: rgba(236, 232, 227, 0.842);
+    }
+
+
+
+    div{
+      border: 1px hidden rgba(17, 16, 16, 0.966);
+      border-radius: 5px;
+      height: 7;
+      width: 100%;
+    }
+    .top{
+      border: 0.5px solid rgb(32, 31, 31);
+      background-color: rgb(32, 31, 31);
+      width: 100%;
+    }
+    .options{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      text-align: justify;
+    }
+    #btn{
+      border: none;
+      background-color: #0d6efd;
+      height: 50px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      
+    }
+    #btn:hover{
+      transition-duration:0.4s;
+      background-color: rgb(59, 32, 211);
+
+    }
+    #head{
+      color: white;
+      font-size: 30px;
+      font-style: serif;
+      text-align: center;
+    }
+    .button-container{
+      padding-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid black;
+      
+      
+    }
+    
+    h1{
+      font-size: 35px;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    #button-text{
+      color: white;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 800;
+    }
+    label{
+      display: flex;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    strong{
+      font-size: large;
+
+    }
+    
+    button:hover{
+      border: 1px solid black;
+      background-color: #0d6efd;
+    }
+  
+    input{
+      cursor: pointer;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <p id="head">Quiz on important Facts</p>
+    </div>
+    <div>
+      <h1>Which one of these is a JavaScript package manager?</h1>
+    </div>
+    
+    <div class="options">
+      <label>
+        <input type="radio" ><strong>a : Node.js</strong>
+      </label>
+      <label>
+        <input type="radio" ><strong>b : Typescript</strong>
+      </label>
+      <label>
+        <input type="radio" checked><strong>c : npm</strong>
+      </label>
+      
+       
+    </div>
+    <div class="button-container">
+      <button id="btn" type="button"><p id="button-text">Previous Question</p></button> &nbsp;&nbsp;&nbsp;
+      <button id="btn"><p id="button-text">Next Question</p></button>
+    </div>
+  </div>
+  
+</body>
+</html>
