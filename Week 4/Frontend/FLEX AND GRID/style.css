@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+
+:root{  
+  --Bright-orange:hsl(31, 77%, 52%);
+  --Dark-cyan:hsl(184, 100%, 22%);
+  --Very-dark-cyan:hsl(179, 100%, 13%);
+  --p-white: hsla(0, 0%, 100%, 0.75);
+  --bhb:hsl(0, 0%, 95%);
+
+
+  --font-size:15px;
+  --Deca-family: 'Lexend Deca', sans-serif;;
+  --Shoulder:'Big Shoulders Display',cursive;
+  
+  --Mobile: 375px;
+  --Desktop: 1440px;
+}
+
+header{
+  background-color: var(--Bright-orange);
+  width: 100%;
+}
+header a{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(--Deca-family);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* margin: auto; */
+}
+
+.sedans{
+  background-color: var(--Bright-orange);
+  padding: 3em;
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+
+}
+
+.sedans h3{
+  color: var(--bhb);
+  font-family: var(--Shoulder);
+}
+.sedans p{
+  color: var(--p-white);
+  font-family:var(--Deca-family);
+}
+.sedans button {
+  background: white;
+  border: 1px solid var(--Bright-orange);
+  padding:0.7rem;
+  border-radius: 2rem;
+  color: var(--Bright-orange);
+  font-weight: 500;
+  font-family: var(--Deca-family);
+  font-size: 15px;
+  margin-top:30px;
+}
+.sedans button:hover {
+  background: var(--Bright-orange);
+  color: white;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+.suvs{
+  background-color: var(--Dark-cyan);
+  padding: 3em;
+  width: 100%;
+}
+.suvs h3{
+  color: var(--bhb);
+  font-family: var(--Shoulder);
+}
+
+.suvs p{
+  color: var(--p-white);
+  font-family:var(--Deca-family);
+  padding-bottom: 50px;
+}
+.suvs button {
+  background: white;
+  border: 1px solid var(--Dark-cyan);
+  padding:0.7rem;
+  border-radius: 2rem;
+  color: var(--Dark-cyan);
+  font-weight: 500;
+  font-family: var(--Deca-family);
+  font-size: 15px;
+}
+.suvs button:hover {
+  background: var(--Dark-cyan);
+  color: white;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+.luxury{
+  background-color: var(--Very-dark-cyan);
+  padding: 3em;
+  width: 100%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.luxury h3{
+  color: var(--bhb);
+  font-family: var(--Shoulder);
+}
+.luxury p{
+  color: var(--p-white);
+  font-family:var(--Deca-family);
+}
+.suvs p{
+  color: var(--p-white);
+  font-family:var(--Deca-family);
+}
+.luxury button {
+  background: var(--bhb);
+  border: 1px solid var(--Very-dark-cyan);
+  padding:0.7rem;
+  border-radius: 2rem;
+  color: var(--Very-dark-cyan);
+  font-weight: 500;
+  font-family: var(--Deca-family);
+  font-size: 15px;
+  margin-top: 10px;
+}
+.luxury button:hover {
+  background: var(--Very-dark-cyan);
+  color: var(--bhb);
+  border: 2px solid white; 
+  transition: 0.4s;
+}
+
+
+.container{
+  display: flex;
+}
+
+@media screen and (max-width:375px){
+ 
+  main{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .sedans{
+    background-color: var(--Bright-orange);
+    color: var(--p-white);
+    font-size: var(--font-size);
+    width: 100%;
+    padding: 1em;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .sedans button{
+    font-size: 11px;
+    font-weight: 80;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    font-family: var(--Deca-family);
+    font-family: var(--bhb);
+  }
+  img{
+    margin-bottom:10px;
+  }
+  p{
+   font-size: xx-small;
+   margin-top: 10px;
+ }
+  .suvs{
+    background-color: var(--Dark-cyan);
+    color: var(--p-white);;
+    padding: 1em;
+    width: 100%;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+  }
+  .suvs button {
+    padding:0.4rem;
+    border-radius: 2rem;
+    font-weight: 50;
+    font-family: var(--Deca-family);
+    font-size: 11px;
+    font-family: var(--bhb);
+    
+  }
+  .sedans button{
+    margin-top: 45px;
+  }
+  .luxury{
+    background-color: var(--Very-dark-cyan);
+    color: var(--p-white);
+    padding: 1em;
+    width: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .luxury button {
+    padding:0.3rem;
+    font-family: var(--Deca-family);
+    border-radius: 2rem;
+    font-weight: 50;
+    font-family: var(--bhb);
+    font-size: 11px;
+    margin-top: 19px;
+  }
+  .container{
+    display: flex;
+  }
+ 
+ 
+}
