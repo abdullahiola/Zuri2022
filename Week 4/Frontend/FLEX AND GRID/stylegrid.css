@@ -1,236 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-
-:root{  
-  --Bright-orange:hsl(31, 77%, 52%);
-  --Dark-cyan:hsl(184, 100%, 22%);
-  --Very-dark-cyan:hsl(179, 100%, 13%);
-  --p-white: hsla(0, 0%, 100%, 0.75);
-  --bhb:hsl(0, 0%, 95%);
-
-
-  --font-size:15px;
-  --Deca-family: 'Lexend Deca', sans-serif;;
-  --Shoulder:'Big Shoulders Display',cursive;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  background-color: var(--bhb);
-  display: flex; 
-  place-items: center;
-  min-height: 100vh;
+html {
+  font-size: 62.5%;
 }
-main{
+body {
+  background-color: #e9ecef;
+}
+
+.main {
+  max-width: 90rem;
+  margin: 10rem auto;
+}
+
+.box {
   display: grid;
-  grid-template-areas:
-    "a b c"
-    "a b c"
-  ;
-  width: 50%;
-  margin: auto;
-  
-}
-main div{
-  padding: 2em;
-}
-.sedans{
-  background-color: var(--Bright-orange);
-  padding: 3em;
-  width: 70%;
-  font-family: var(--Shoulder);
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  font-size: 15px;
-}
-.sedans h3{
-  color: var(--bhb);
-  font-family: var(--Shoulder);
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-.sedans p{
-  color: var(--p-white);
-  font-family:var(--Deca-family);
-}
-.sedans button {
-  background: white;
-  border: 1px solid var(--Bright-orange);
-  padding:0.7rem;
-  border-radius: 2rem;
-  color: var(--Bright-orange);
-  font-weight: 500;
-  font-size: 15px;
-  margin-top:50px;
-  font-family: var(--Deca-family);
-
-}
-.sedans button:hover {
-  background: var(--Bright-orange);
-  color: white;
-  border: 2px solid white;
-  transition: 0.4s;
-}
-.suvs{
-  background-color: var(--Dark-cyan);
-  padding: 3em;
-  width: 70%;
-  font-size: 15px ;
-}
-.suvs h3{
-  color: var(--bhb);
-  font-family: var(--Shoulder);
-  margin-bottom: 20px;
-  font-size: 20px;
-
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 14rem);
+  gap: 1rem;
 }
 
-.suvs p{
-  color: var(--p-white);
-  font-family:var(--Deca-family);
-  padding-bottom: 50px;
+.box-item:nth-child(1) {
+  background-color: #f03e3e;
+  grid-column: 1/4;
+  grid-row: 1/3;
 }
-.suvs button {
-  background: white;
-  border: 1px solid var(--Dark-cyan);
-  padding:0.7rem;
-  border-radius: 2rem;
-  color: var(--Dark-cyan);
-  font-weight: 500;
-  font-size: 15px;
-  font-family: var(--Deca-family);
-
+.box-item:nth-child(2) {
+  background-color: #f08c00;
+  grid-row: 1/3;
 }
-.suvs button:hover {
-  background: var(--Dark-cyan);
-  color: white;
-  border: 2px solid white;
-  transition: 0.4s;
+.box-item:nth-child(3) {
+  background-color: #40c057;
+  grid-column: 1/3;
+  grid-row: 3/5;
 }
-.luxury{
-  background-color: var(--Very-dark-cyan);
-  padding: 3em;
-  width: 70%;
-  font-size: 15px;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
+.box-item:nth-child(4) {
+  background-color: #339af0;
+  grid-row: 3/4;
+  grid-column: 3/5;
 }
-.luxury h3{
-  font-size: 20px;
-  color: var(--bhb);
-  font-family: var(--Shoulder);
-  margin-bottom: 20px;
-
+.box-item:nth-child(5) {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  background-color: #339af0;
 }
-.luxury p{
-  color: var(--p-white);
-  font-family:var(--Deca-family);
-}
-.luxury button {
-  background: var(--bhb);
-  border: 1px solid var(--Very-dark-cyan);
-  padding:0.7rem;
-  border-radius: 2rem;
-  color: var(--Very-dark-cyan);
-  font-weight: 500;
-  font-size: 15px;
-  margin-top: 50px;
-  font-family: var(--Deca-family);
-
-}
-.luxury button:hover {
-  background: var(--Very-dark-cyan);
-  color: var(--bhb);
-  border: 2px solid white; 
-  transition: 0.4s;
-}
-img{
-  margin-bottom: 20px;
-}
-
-
-
-@media screen and (max-width:375px){
-  main{
-    width: 100%;
-  }
-  .sedans{
-    background-color: var(--Bright-orange);
-    color: var(--p-white);
-    font-size: var(--font-size);
-    width: 80%;
-    padding: 1em;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  .sedans button{
-    font-size: 11px;
-    font-weight: 80;
-    padding: 0.3rem;
-    border-radius: 2rem;
-    font-family: var(--Deca-family);
-    
-  }
-  img{
-    margin-bottom:10px;
-  }
-  p{
-   font-size: xx-small;
-   margin-top: 10px;
- }
-  .suvs{
-    background-color: var(--Dark-cyan);
-    color: var(--p-white);;
-    padding: 1em;
-    width: 80%;
-    border-top-left-radius: 1px;
-    border-bottom-left-radius: 1px;
-  }
-  .suvs button {
-    padding:0.3rem;
-    border-radius: 2rem;
-    font-weight: 50;
-    font-size: 11px;
-    font-family: var(--Deca-family);
-    margin-bottom:0px;
-    
-  }
-  .sedans button{
-    margin-top: 45px;
-  }
-  .luxury{
-    background-color: var(--Very-dark-cyan);
-    color: var(--p-white);
-    padding: 1em;
-    /* width: 100%; */
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-  }
-  .luxury button {
-    padding:0.31rem;
-    border-radius: 2rem;
-    font-weight: 100;
-    font-family: var(--Deca-family);
-    font-size: 0.6rem;
-    margin-top: 33px;
-  }
-  .luxury button:hover {
-    background: var(--Very-dark-cyan);
-    color: var(--bhb);
-    border: 2px solid white; 
-    font-size: 9px;
-    transition: 0.4s;
-  }
-  
-}
-
-
-
-
-
-/* codepen.io/Weldebob/pen/WjMLav */
